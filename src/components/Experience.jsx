@@ -1,4 +1,7 @@
 import React from 'react';
+import H2Styled from '../styled/H2Styled'
+import H3Styled from '../styled/H3Styled'
+import PStyled from '../styled/PStyled'
 
 const Experience = props => (
 
@@ -8,10 +11,10 @@ const Experience = props => (
         {props.data.map((exp,index) => (
 
             <div className="Experience-item" key={`Exp-${index}`}>
-                <h3>{exp.company} {exp.startDate}-{exp.endDate}</h3>
-                <h4>{exp.jobTitle}</h4>
+                <H2Styled name={exp.company}> {exp.startDate}-{exp.endDate}</H2Styled>
+                <H3Styled>{exp.jobTitle}</H3Styled>
 
-                <p>{exp.jobDescription}</p>
+                <PStyled name={exp.jobDescription}></PStyled>
             </div>
 
         ))}

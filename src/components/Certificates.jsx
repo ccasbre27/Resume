@@ -1,4 +1,7 @@
 import React from 'react';
+import H2Styled from '../styled/H2Styled'
+import H3Styled from '../styled/H3Styled'
+import PStyled from '../styled/PStyled'
 
 const Certificates = props => (
 
@@ -8,9 +11,9 @@ const Certificates = props => (
         { props.data.map((cert,index) => (
 
             <div className="Certificates-item" key={`Cert-${index}`}>
-                <h3>{cert.name} {cert.date}</h3>
-                <h4>{cert.institution}</h4>
-                <p>{cert.description}</p>
+                <H2Styled name={cert.name}> {cert.date}</H2Styled>
+                <H3Styled>{cert.institution}</H3Styled>
+                <PStyled name={cert.description}></PStyled>
             </div>
         
         ))}    
