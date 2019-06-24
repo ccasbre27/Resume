@@ -9,6 +9,7 @@ git:
 script:
   - yarn build
 deploy:
+  name: c@rlos
   provider: pages
   skip-cleanup: true
   keep-history: true
