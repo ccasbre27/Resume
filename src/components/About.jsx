@@ -57,7 +57,7 @@ const About = ({avatar, name, profession, bio, address, social}) => (
         <div className="About-container">
             <AboutAvatar>
                 <figure>
-                    <img src="https://www.facebook.com/photo.php?fbid=2578295008864010&set=a.153676937992508&type=3&theater" 
+                    <img src="/" 
                     alt={name} />
                 </figure>
             </AboutAvatar>
@@ -65,13 +65,13 @@ const About = ({avatar, name, profession, bio, address, social}) => (
                 <AboutH2>{name}</AboutH2>
             </div>
             <AboutProfession>
-                <p>Backend and Frontend developer</p>
+                Backend and Frontend developer
             </AboutProfession>
             <AboutBio>
-                <p>Hello World! I am software developer.</p>
+                Hello World! I am software developer.
             </AboutBio>
             <AboutLocation>
-                <p>San José, Costa Rica.</p>
+                San José, Costa Rica.
             </AboutLocation>
             <div className="About-social">
                <Social social={social} />  
